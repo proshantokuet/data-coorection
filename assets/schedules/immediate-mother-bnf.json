@@ -1,0 +1,34 @@
+{
+    "name": "ImmediateBirthNotificationPregnancyStatusFollowUp",
+    "absolute": true,
+    "milestones": [
+        {
+            "name": "ImmediateBirthNotificationPregnancyStatusFollowUp",
+            "scheduleWindows": {
+                "due": ["261 Days"],
+                "late": ["661 Days"],
+                "max": ["662 Days"]
+            },
+            "alerts": [
+                {
+                    "window": "due",
+                    "offset": ["0 Days"],
+                    "interval": ["1 Day"],
+                    "count": "261"
+                },
+                {
+                    "window": "late",
+                    "offset": ["261 Days"],
+                    "interval": ["1 Day"],
+                    "count": "400"
+                },
+                 {
+                    "window": "max",
+                    "offset": ["661 Days"],
+                    "interval": ["1 Day"],
+                    "count": "1"
+                }                            
+            ]
+        }  
+    ]
+}

@@ -1,0 +1,16 @@
+language: java
+sudo: false
+addons:
+  postgresql: 9.3
+services:
+  - couchdb
+  - rabbitmq
+before_script:
+      - psql -c "ALTER USER postgres WITH PASSWORD 'password'" -U postgres
+      - curl -X PUT http://localhost:5984/_config/admins/Admin -d '"mPower@1234"'
+script:
+  - javac -version
+  - java -version
+  - mvn --version
+  - mvn clean test
+

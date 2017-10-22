@@ -1,0 +1,13 @@
+Date of Release: 10-Aug-2015
+
+New Features
+============
+- Created two new services for external system integration.
+
+Changes
+=======
+- In form submission controller added a new service method getEntityIdForBRN which take a list of birth registration no and return existing client entity id against it.
+- In form submission controller added a new service method getUserByLocation which take location name as a parameter and return assigned user id in that location.
+
+
+=======
